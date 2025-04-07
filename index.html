@@ -61,25 +61,73 @@
         </div>
         <div data-cy="hw1-skills-box-pre">
             <h2>Мои скиллы</h2>
-            <!-- 4) Здесь создай несколько чекбоксов с подписью (не меньше 3-х). 
-
+            <!-- 4) Здесь создай несколько чекбоксов с подписью (не меньше 3-х).  
                 - В подписи укажи названия любых тем по верстке (все, что знаешь или слышал). 
                 - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для подписи
                 - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
+                <label>
+                    HTML5
+                    <input type="checkbox" name="unit" value="HTML5" checked> 
+                </label>
+                <label>
+                    CSS3
+                    <input type="checkbox" name="unit" value="CSS3" checked> 
+                </label>
+                <label>
+                    JavaScript 
+                    <input type="checkbox" name="unit" value="JavaScript"> 
+                </label>
+                <label>
+                    Jquery
+                    <input type="checkbox" name="unit" value="Jquery"> 
+                </label>
+                <label>
+                    React
+                    <input type="checkbox" name="unit" value="React"> 
+                </label>
         </div>
         <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
         <!-- 6) Создай здесь кнопку “Добавить” -->
         <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
-        
-        <table data-cy="hw-about-table-pre">
+        <form>
+            <input type="text" name="skill" placeholder="Новый скилл">
+            <input type="submit" value="Добавить">
+        </form>
+        <hr>
+        <table data-cy="hw-about-table-pre" border="3px">
             <!-- 8) В таблице сделай 5 строк и 3 столбца. 
                         - В первой строке ячейки заголовков, в остальных обычные ячейки
                         - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
                         - В последнем ряду первая ячейка должна занимать 2 столбца (как должно выглядеть - смотри образец). Таблицу можно заполнять любыми данными -->
+            <tr>
+                <th>№</th>
+                <th>Month</th>
+                <th>Salery</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>January</td>
+                <td>3000$</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>February</td>
+                <td>4000$</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>March</td>
+                <td>5000$</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total:</td>   
+                <td>12000$</td>  
+            </tr>
         </table>
     </section>
     <footer data-cy="hw-footer-pre">
         <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
+         <a href="https://it-incubator.io/" target="_blank">it-incubator</a>
     </footer>
 </body>
 </html>
